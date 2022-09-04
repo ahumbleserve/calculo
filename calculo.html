@@ -1,0 +1,76 @@
+Informe o nome em Grego para calcular o seu valor: <br>
+<input id="edValue" type="text" ><br>
+<input type="button" value="calcular" onclick="edValueKeyPress()"><br>
+<span id="lblValue">Resultado: </span>
+<script>
+function edValueKeyPress() {
+    var edValue = document.getElementById("edValue");
+    var s = edValue.value;
+
+    var lblValue = document.getElementById("lblValue");
+    
+    count=0;
+	for (var i = 0; i < s.length; i++) {
+		//lblValue.innerText += s[i];
+		if(s[i] == "Α" || s[i] == "α" || s[i] == "ά"){
+	    	count+=1;
+	    }if(s[i] == "Β" || s[i] == "β"){
+	    	count+=2;
+	    }if(s[i] == "Γ" || s[i] == "γ"){
+	    	count+=3;
+	    }if(s[i] == "Δ" || s[i] == "δ"){
+	    	count+=4;
+	    }if(s[i] == "Ε" || s[i] == "ε"){
+	    	count+=5;
+	    }if(s[i] == "Ϝ" || s[i] == "ϛ"){
+	    	count+=6;
+	    }if(s[i] == "Ζ" || s[i] == "ζ"){
+	    	count+=7;
+	    }if(s[i] == "Η" || s[i] == "η"){
+	    	count+=8;
+	    }if(s[i] == "Θ" || s[i] == "θ"){
+	    	count+=9;
+	    }if(s[i] == "Ι" || s[i] == "ι"){
+	    	count+=10;
+	    }if(s[i] == "Κ" || s[i] == "κ"){
+	    	count+=20;
+	    }if(s[i] == "Λ" || s[i] == "λ"){
+	    	count+=30;
+	    }if(s[i] == "Μ" || s[i] == "μ"){
+	    	count+=40;
+	    }if(s[i] == "Ν" || s[i] == "ν"){
+	    	count+=50;
+	    }if(s[i] == "Ξ" || s[i] == "ξ"){
+	    	count+=60;
+	    }if(s[i] == "Ο" || s[i] == "ο"){
+	    	count+=70;
+	    }if(s[i] == "Π" || s[i] == "π"){
+	    	count+=80;
+	    }if(s[i] == "Ϙ"){
+	    	count+=90;
+	    }if(s[i] == "Ρ" || s[i] == "ρ"){
+	    	count+=100;
+	    }if(s[i] == "Σ" || s[i] == "σ"){
+	    	count+=200;
+	    }if(s[i] == "Τ" || s[i] == "τ"){
+	    	count+=300;
+	    }if(s[i] == "Υ" || s[i] == "υ"){
+	    	count+=400;
+	    }if(s[i] == "Φ" || s[i] == "φ"){
+	    	count+=500;
+	    }if(s[i] == "Χ" || s[i] == "χ"){
+	    	count+=600;
+	    }if(s[i] == "Ψ" || s[i] == "ψ"){
+	    	count+=700;
+	    }if(s[i] == "Ω" || s[i] == "ω"){
+	    	count+=800;
+	    }if(s[i] == "ϡ"){
+	    	count+=900;
+	    }
+	}
+
+	lblValue.innerText = "Resulto= " + count;
+}
+</script>
+
+
